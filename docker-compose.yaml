@@ -3,10 +3,6 @@ services:
   flask-app:
     image: dylantodd01/flask-app:latest
     build: ./
-    ports:
-    - target: 8080
-      published: 8080
-      protocol: tcp
   nginx:
     image: nginx:latest
     ports:
